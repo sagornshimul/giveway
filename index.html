@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annual Giveaway — Get $1,000 to Spend at Walmart | 100 Winners</title>
+<meta name="description" content="Rent2ownHelper's annual visitor giveaway is back. 100 winners will each get a $1,000 Walmart gift card. Participate free and unlock the rental listings search.">
+<meta name="theme-color" content="#0071ce">
+
+<!-- =========================================================
+     IMPORTANT: Replace every href="https://YOUR-ENTRY-PAGE.com"
+     with the URL of the page you want the button to redirect to.
+     (Search for "YOUR-ENTRY-PAGE" — there are 6 places.)
+     ========================================================= -->
+
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --blue:#0071ce;
+    --blue-dk:#00447c;
+    --blue-deep:#002f5f;
+    --blue-lt:#2ba0ee;
+    --yellow:#ffc220;
+    --yellow-dk:#e8a900;
+    --ink:#0b1220;
+    --muted:#5b6b7f;
+    --line:#e2eaf3;
+    --bg:#f5f9fd;
+    --white:#fff;
+    --green:#16a34a;
+    --brand-blue:#0056a4;
+    --brand-green:#00b050;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{display:block}
+  a{color:inherit}
+  [hidden]{display:none !important}
+
+  /* ============ LOGO SVG ============ */
+  .logo-svg{
+    height:42px;
+    width:auto;
+    display:block;
+  }
+  .logo-svg text{
+    font-family: 'Arial Black', 'Impact', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+  }
+
+  /* ============ TOP ANNOUNCEMENT BAR ============ */
+  .topbar{
+    background:linear-gradient(90deg,#003a6b,#0071ce 50%,#003a6b);
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+    text-align:center;
+    padding:9px 16px;
+    letter-spacing:.2px;
+    position:relative;
+    z-index:60;
+  }
+  .topbar b{color:var(--yellow)}
+
+  /* ============ HEADER ============ */
+  .nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(226,234,243,.9);
+  }
+  .nav-inner{
+    max-width:1140px; margin:0 auto; padding:13px 20px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .brand{
+    display:flex; align-items:center; text-decoration:none;
+  }
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:7px;
+    background:var(--yellow); color:var(--ink);
+    text-decoration:none; font-weight:800; font-size:14px;
+    padding:10px 18px; border-radius:11px;
+    box-shadow:0 8px 18px -10px rgba(255,194,32,.95);
+    transition:transform .14s, box-shadow .14s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-1px); box-shadow:0 12px 22px -10px rgba(255,194,32,1)}
+
+  /* ============ HERO ============ */
+  .hero{
+    position:relative; overflow:hidden;
+    background:
+      radial-gradient(1000px 620px at 12% -10%, #1e93e6 0%, transparent 58%),
+      radial-gradient(760px 520px at 92% 8%, #0a5fae 0%, transparent 60%),
+      linear-gradient(168deg,#004e97 0%, #0068bf 46%, #007fd6 100%);
+    color:#fff;
+    padding:64px 20px 92px;
+  }
+  .hero::before,.hero::after{
+    content:""; position:absolute; border-radius:50%;
+    background:rgba(255,255,255,.06); pointer-events:none;
+  }
+  .hero::before{width:520px;height:520px;top:-210px;right:-160px}
+  .hero::after{width:360px;height:360px;bottom:-170px;left:-130px}
+
+  .hero-inner{
+    position:relative; z-index:2;
+    max-width:1140px; margin:0 auto;
+    display:grid; gap:52px; align-items:center;
+    grid-template-columns:1fr;
+  }
+  @media (min-width:900px){
+    .hero-inner{grid-template-columns:1.05fr .95fr; gap:40px}
+  }
+
+  .pill{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.3);
+    padding:7px 14px; border-radius:999px;
+    font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+    backdrop-filter:blur(6px);
+    margin-bottom:20px;
+  }
+  .pill .pulse{
+    width:7px;height:7px;border-radius:50%;background:#4ade80;
+    box-shadow:0 0 0 0 rgba(74,222,128,.7);
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+  h1{
+    margin:0 0 18px;
+    font-size:clamp(34px,6.4vw,58px);
+    line-height:1.03;
+    letter-spacing:-2px;
+    font-weight:860;
+  }
+  h1 .hl{
+    background:linear-gradient(180deg,transparent 58%, rgba(255,194,32,.9) 58%);
+    padding:0 3px;
+    white-space:nowrap;
+  }
+  .hero-sub{
+    margin:0 0 22px;
+    font-size:clamp(16px,2.2vw,18.5px);
+    line-height:1.55;
+    color:rgba(255,255,255,.88);
+    max-width:560px;
+  }
+  .hero-sub strong{color:#fff; font-weight:800}
+
+  /* ===== HERO UNLOCK CALLOUT ===== */
+  .unlock-callout{
+    display:flex; align-items:flex-start; gap:13px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.32);
+    border-left:4px solid var(--yellow);
+    border-radius:14px;
+    padding:15px 18px;
+    margin:0 0 26px;
+    max-width:560px;
+    backdrop-filter:blur(8px);
+  }
+  .unlock-callout .uico{
+    width:38px;height:38px;flex:none;border-radius:11px;
+    background:linear-gradient(140deg,#ffdb70,#ffc220);
+    display:grid;place-items:center;font-size:18px;
+    box-shadow:0 8px 18px -10px rgba(255,194,32,.95);
+  }
+  .unlock-callout p{
+    margin:0; font-size:15px; line-height:1.55; color:rgba(255,255,255,.92);
+  }
+  .unlock-callout p b{color:#fff; font-weight:850}
+  .unlock-callout p .u-em{
+    background:linear-gradient(180deg,transparent 60%, rgba(255,194,32,.55) 60%);
+    font-weight:850; color:#fff; padding:0 1px;
+  }
+
+  /* CTA */
+  .cta-wrap{display:flex; flex-direction:column; gap:11px; align-items:flex-start}
+  .btn-main{
+    position:relative; overflow:hidden;
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    background:linear-gradient(180deg,#ffdb70,#ffc220 55%,#f5b400);
+    color:#0b1220; text-decoration:none;
+    font-weight:860; font-size:17.5px; letter-spacing:.1px;
+    padding:18px 34px; border-radius:15px;
+    box-shadow:0 18px 34px -14px rgba(255,194,32,.95), inset 0 1px 0 rgba(255,255,255,.6);
+    transition:transform .14s, box-shadow .14s;
+  }
+  .btn-main:hover{transform:translateY(-2px); box-shadow:0 24px 42px -14px rgba(255,194,32,1), inset 0 1px 0 rgba(255,255,255,.6)}
+  .btn-main:active{transform:translateY(1px)}
+  .btn-main .arrow{transition:transform .16s}
+  .btn-main:hover .arrow{transform:translateX(4px)}
+  .btn-main::after{
+    content:""; position:absolute; top:-60%; left:-45%; width:45%; height:220%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
+    transform:rotate(20deg);
+    animation:shine 3.8s ease-in-out infinite;
+  }
+  @keyframes shine{0%{left:-50%}55%{left:140%}100%{left:140%}}
+
+  .cta-note{
+    font-size:13.5px; color:rgba(255,255,255,.75); font-weight:600;
+    display:flex; align-items:center; gap:7px; flex-wrap:wrap;
+  }
+  .cta-note span{display:inline-flex;align-items:center;gap:5px}
+
+  /* stats strip */
+  .stats{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    gap:8px; margin-top:36px;
+    border-top:1px solid rgba(255,255,255,.18);
+    padding-top:22px;
+    max-width:520px;
+  }
+  .stat b{
+    display:block; font-size:clamp(22px,3.6vw,30px);
+    font-weight:860; letter-spacing:-1px; line-height:1;
+  }
+  .stat span{
+    display:block; margin-top:6px;
+    font-size:11.5px; font-weight:700; letter-spacing:.7px;
+    text-transform:uppercase; color:rgba(255,255,255,.62);
+  }
+
+  /* gift card visual */
+  .gc-stage{
+    display:flex; justify-content:center; align-items:center;
+    position:relative; padding:26px 0;
+  }
+  .gc{
+    position:relative; overflow:hidden;
+    width:100%; max-width:400px; aspect-ratio:1.586/1;
+    border-radius:24px; padding:26px;
+    background:linear-gradient(135deg,#1080e8 0%, #0a56ab 52%, #063a80 100%);
+    box-shadow:0 44px 76px -32px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.4);
+    display:flex; flex-direction:column; justify-content:space-between;
+    transform:rotate(-6deg);
+    transition:transform .35s cubic-bezier(.2,.8,.25,1);
+  }
+  .gc:hover{transform:rotate(-3deg) scale(1.02)}
+  .gc::after{
+    content:""; position:absolute; top:-70%; left:-45%; width:50%; height:250%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+    transform:rotate(18deg);
+    animation:shine 3.6s ease-in-out infinite;
+  }
+  .gc-top{display:flex; align-items:center; gap:11px; position:relative; z-index:1}
+  .gc-spark{width:32px;height:32px;flex:none}
+  .gc-brand{font-size:21px; font-weight:860; letter-spacing:-.5px}
+  .gc-label{
+    font-size:10.5px; font-weight:800; letter-spacing:1.6px;
+    text-transform:uppercase; color:rgba(255,255,255,.7); margin-bottom:3px;
+  }
+  .gc-amount{
+    position:relative; z-index:1;
+    font-size:clamp(42px,9vw,58px); font-weight:860;
+    letter-spacing:-3px; line-height:.95;
+  }
+  .gc-foot{
+    position:relative; z-index:1;
+    display:flex; justify-content:space-between; align-items:flex-end;
+    font-size:11.5px; font-weight:700; letter-spacing:.8px;
+    color:rgba(255,255,255,.62); text-transform:uppercase;
+  }
+  .gc-float{
+    position:absolute; z-index:3;
+    background:#fff; color:var(--ink);
+    border-radius:15px; padding:12px 16px;
+    box-shadow:0 22px 40px -18px rgba(0,0,0,.6);
+    font-weight:850; font-size:14px; letter-spacing:-.3px;
+    display:flex; align-items:center; gap:9px;
+  }
+  .gc-float small{display:block; font-size:10.5px; font-weight:700; color:var(--muted); letter-spacing:.5px; text-transform:uppercase}
+  .gc-float.a{top:2px; right:2px; animation:float 4.2s ease-in-out infinite}
+  .gc-float.b{bottom:8px; left:0; animation:float 4.2s ease-in-out infinite .9s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+  .gc-float .ico{
+    width:32px;height:32px;flex:none;border-radius:10px;
+    background:linear-gradient(140deg,#ffdb70,#ffc220);
+    display:grid;place-items:center;font-size:16px;
+  }
+
+  /* ============ SECTION SHELL ============ */
+  .wrap{max-width:1140px; margin:0 auto; padding:0 20px}
+  section{padding:72px 0}
+  .sec-head{text-align:center; max-width:680px; margin:0 auto 44px}
+  .sec-eyebrow{
+    display:inline-block;
+    font-size:11.5px; font-weight:850; letter-spacing:1.4px; text-transform:uppercase;
+    color:var(--blue); background:#e8f3ff;
+    padding:6px 13px; border-radius:999px; margin-bottom:15px;
+  }
+  h2{
+    margin:0 0 13px;
+    font-size:clamp(26px,4.4vw,38px);
+    letter-spacing:-1.2px; line-height:1.12; font-weight:860;
+  }
+  .sec-head p{
+    margin:0; color:var(--muted);
+    font-size:16.5px; line-height:1.6;
+  }
+
+  /* ============ COUNTDOWN ============ */
+  .countdown-sec{background:#fff; border-bottom:1px solid var(--line); padding:52px 0}
+  .cd-box{
+    display:flex; flex-direction:column; align-items:center; gap:22px;
+    text-align:center;
+  }
+  .cd-title{
+    font-size:13px; font-weight:850; letter-spacing:1.3px;
+    text-transform:uppercase; color:var(--muted);
+  }
+  .cd-grid{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+  .cd-cell{
+    min-width:96px;
+    background:linear-gradient(170deg,#f0f7ff,#e2eefc);
+    border:1px solid #d3e5f8;
+    border-radius:16px; padding:16px 12px 13px;
+  }
+  .cd-cell b{
+    display:block; font-size:clamp(28px,6vw,40px);
+    font-weight:860; letter-spacing:-1.8px; line-height:1;
+    color:var(--blue-dk);
+    font-variant-numeric:tabular-nums;
+  }
+  .cd-cell span{
+    display:block; margin-top:7px;
+    font-size:10.5px; font-weight:800; letter-spacing:1.1px;
+    text-transform:uppercase; color:#7d90a5;
+  }
+
+  /* ============ SEARCH UNLOCK SECTION ============ */
+  .unlock-sec{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    overflow:hidden;
+  }
+  .unlock-grid{
+    display:grid; gap:48px; align-items:center;
+    grid-template-columns:1fr;
+  }
+  @media (min-width:940px){
+    .unlock-grid{grid-template-columns:1fr 1.08fr; gap:56px}
+  }
+  .unlock-copy h2{margin-bottom:16px}
+  .unlock-copy > p{
+    margin:0 0 24px; color:var(--muted);
+    font-size:16.5px; line-height:1.62;
+  }
+  .unlock-list{
+    list-style:none; margin:0 0 28px; padding:0;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .unlock-list li{
+    display:flex; gap:13px; align-items:flex-start;
+    font-size:15.3px; line-height:1.55; color:#31445a;
+  }
+  .unlock-list .tick{
+    width:25px;height:25px;flex:none;border-radius:8px;
+    background:linear-gradient(140deg,#dcfce7,#bbf7d0);
+    display:grid;place-items:center;
+    margin-top:1px;
+  }
+  .unlock-list .tick svg{width:14px;height:14px}
+  .unlock-list .tick path{
+    stroke:#15803d; stroke-width:3.4; fill:none;
+    stroke-linecap:round; stroke-linejoin:round;
+  }
+  .unlock-list b{color:var(--ink); font-weight:800}
+
+  /* ----- search preview mock ----- */
+  .preview{
+    position:relative;
+    background:linear-gradient(165deg,#f7fbff,#eaf3fc);
+    border:1px solid #d8e7f6;
+    border-radius:22px;
+    padding:18px;
+    box-shadow:0 34px 60px -34px rgba(9,40,80,.5);
+  }
+  .preview-badge{
+    position:absolute; top:-13px; left:22px; z-index:4;
+    display:inline-flex; align-items:center; gap:7px;
+    background:linear-gradient(140deg,#22c55e,#16a34a);
+    color:#fff; font-size:11.5px; font-weight:850;
+    letter-spacing:.8px; text-transform:uppercase;
+    padding:7px 13px; border-radius:999px;
+    box-shadow:0 12px 22px -12px rgba(22,163,74,.95);
+  }
+  .preview-badge .dotg{
+    width:7px;height:7px;border-radius:50%;background:#fff;
+    animation:pulse 1.9s infinite;
+  }
+
+  .mock-search{
+    display:flex; align-items:center; gap:10px;
+    background:#fff; border:2px solid var(--blue);
+    border-radius:13px; padding:11px 14px;
+    box-shadow:0 0 0 5px rgba(0,113,206,.1);
+    margin-bottom:16px;
+  }
+  .mock-search svg{width:18px;height:18px;flex:none;opacity:.55}
+  .mock-search .typed{
+    font-size:14.5px; font-weight:650; color:var(--ink);
+    white-space:nowrap; overflow:hidden;
+  }
+  .mock-search .caret{
+    width:2px;height:18px;background:var(--blue);
+    animation:blink 1.05s step-end infinite;
+  }
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+  .mock-search .go{
+    margin-left:auto; flex:none;
+    background:linear-gradient(180deg,#ffdb70,#ffc220);
+    font-size:12.5px; font-weight:850; color:var(--ink);
+    padding:8px 14px; border-radius:9px;
+  }
+
+  .filters{
+    display:flex; gap:7px; flex-wrap:wrap; margin-bottom:16px;
+  }
+  .filters span{
+    font-size:11.5px; font-weight:750; color:#4a5f77;
+    background:#fff; border:1px solid #dde9f5;
+    padding:6px 11px; border-radius:999px;
+  }
+  .filters span.on{
+    background:#e8f3ff; border-color:#b9d9f7; color:var(--blue-dk);
+  }
+
+  .mock-list{display:flex; flex-direction:column; gap:10px}
+  .mock-item{
+    display:flex; gap:12px; align-items:center;
+    background:#fff; border:1px solid #e6eef7;
+    border-radius:13px; padding:11px;
+    transition:transform .18s, box-shadow .18s;
+  }
+  .mock-item:hover{transform:translateX(3px); box-shadow:0 14px 26px -20px rgba(9,40,80,.55)}
+  .mock-thumb{
+    width:56px;height:56px;flex:none;border-radius:10px;
+    background:linear-gradient(140deg,#9fd0f5,#4a9de0);
+  }
+  .mock-thumb.b{background:linear-gradient(140deg,#ffd98a,#f0a93b)}
+  .mock-thumb.c{background:linear-gradient(140deg,#a9e6c4,#48b37e)}
+  .mock-meta{min-width:0; flex:1}
+  .mock-meta strong{
+    display:block; font-size:14px; letter-spacing:-.2px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .mock-meta small{display:block; font-size:11.8px; color:var(--muted); margin-top:3px}
+  .mock-price{
+    flex:none; text-align:right;
+    font-size:14.5px; font-weight:850; letter-spacing:-.4px;
+  }
+  .mock-price small{display:block; font-size:10.5px; font-weight:700; color:var(--muted)}
+
+  .mock-locked{
+    position:relative;
+    margin-top:12px;
+    border-radius:13px;
+    overflow:hidden;
+    background:#fff;
+    border:1px dashed #cddff0;
+    padding:16px;
+    text-align:center;
+  }
+  .mock-locked .blur-row{
+    filter:blur(4px);
+    opacity:.55;
+    display:flex; gap:10px; margin-bottom:12px;
+  }
+  .mock-locked .blur-row div{
+    height:34px; flex:1; border-radius:8px; background:#dfeaf5;
+  }
+  .mock-locked .lock-msg{
+    position:relative; z-index:2;
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12.8px; font-weight:800; color:var(--blue-dk);
+    background:#eaf4ff; border:1px solid #c8e0f8;
+    padding:7px 14px; border-radius:999px;
+  }
+
+  /* ============ PRIZE / WHY ============ */
+  .why{background:var(--bg)}
+  .cards{
+    display:grid; gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  }
+  .card{
+    background:#fff; border:1px solid var(--line);
+    border-radius:20px; padding:28px 24px;
+    transition:transform .2s, box-shadow .2s, border-color .2s;
+  }
+  .card:hover{transform:translateY(-4px); box-shadow:0 24px 44px -26px rgba(10,40,80,.4); border-color:#cfe2f5}
+  .card .cico{
+    width:50px;height:50px;border-radius:15px;
+    display:grid;place-items:center;
+    font-size:23px; margin-bottom:17px;
+    background:linear-gradient(140deg,#e8f3ff,#d3e9ff);
+  }
+  .card h3{margin:0 0 9px; font-size:18px; letter-spacing:-.4px}
+  .card p{margin:0; color:var(--muted); font-size:14.6px; line-height:1.62}
+
+  /* ============ HOW IT WORKS ============ */
+  .how{background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .steps{
+    display:grid; gap:26px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    counter-reset:step;
+    position:relative;
+  }
+  .step{position:relative; padding-top:8px}
+  .step-num{
+    counter-increment:step;
+    width:52px;height:52px;border-radius:16px;
+    background:linear-gradient(150deg,var(--blue),var(--blue-dk));
+    color:#fff; display:grid; place-items:center;
+    font-weight:860; font-size:21px; letter-spacing:-.6px;
+    margin-bottom:18px;
+    box-shadow:0 14px 26px -14px rgba(0,68,124,.85);
+  }
+  .step-num::before{content:counter(step)}
+  .step h3{margin:0 0 9px; font-size:18px; letter-spacing:-.4px}
+  .step p{margin:0; color:var(--muted); font-size:14.6px; line-height:1.62}
+  .step p strong{color:var(--ink); font-weight:750}
+
+  .step.highlight .step-num{
+    background:linear-gradient(150deg,#22c55e,#15803d);
+    box-shadow:0 14px 26px -14px rgba(21,128,61,.95);
+  }
+  .step.highlight h3{color:var(--green)}
+  .step.highlight::before{
+    content:"THE UNLOCK";
+    position:absolute; top:-4px; right:0;
+    font-size:9.5px; font-weight:850; letter-spacing:1.1px;
+    color:var(--green); background:#dcfce7;
+    padding:4px 9px; border-radius:999px;
+  }
+  .step-tag{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:12px;
+    font-size:11.8px; font-weight:800; color:var(--blue-dk);
+    background:#eaf4ff; border:1px solid #cbe2f8;
+    padding:6px 11px; border-radius:999px;
+  }
+
+  .notice{
+    margin-top:44px;
+    display:flex; gap:15px; align-items:flex-start;
+    background:linear-gradient(120deg,#fff9e6,#fffdf5);
+    border:1px solid #ffe6a3;
+    border-radius:18px; padding:20px 22px;
+  }
+  .notice .nico{
+    width:40px;height:40px;flex:none;border-radius:12px;
+    background:linear-gradient(140deg,#ffdb70,#ffc220);
+    display:grid;place-items:center;font-size:19px;
+  }
+  .notice p{margin:0; font-size:14.6px; line-height:1.62; color:#6b5b22}
+  .notice strong{color:#4a3d0d; font-weight:850}
+
+  /* ============ FAQ ============ */
+  .faq{background:var(--bg)}
+  .faq-list{max-width:780px; margin:0 auto; display:flex; flex-direction:column; gap:12px}
+  details{
+    background:#fff; border:1px solid var(--line);
+    border-radius:15px; overflow:hidden;
+    transition:border-color .18s, box-shadow .18s;
+  }
+  details[open]{border-color:#c9dff4; box-shadow:0 18px 34px -26px rgba(10,40,80,.4)}
+  summary{
+    cursor:pointer; list-style:none;
+    padding:18px 22px;
+    font-weight:750; font-size:15.8px; letter-spacing:-.2px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:""; flex:none;
+    width:11px;height:11px;
+    border-right:2.4px solid var(--blue);
+    border-bottom:2.4px solid var(--blue);
+    transform:rotate(45deg); margin-top:-4px;
+    transition:transform .22s;
+  }
+  details[open] summary::after{transform:rotate(-135deg); margin-top:4px}
+  details .ans{
+    padding:0 22px 20px;
+    color:var(--muted); font-size:14.8px; line-height:1.68;
+  }
+  details .ans a{color:var(--blue); font-weight:700}
+
+  /* ============ FINAL CTA ============ */
+  .final{
+    position:relative; overflow:hidden;
+    background:
+      radial-gradient(900px 560px at 20% 0%, #1e93e6 0%, transparent 60%),
+      linear-gradient(160deg,#004e97 0%, #0068bf 55%, #0084d9 100%);
+    color:#fff; text-align:center;
+    padding:88px 20px 96px;
+  }
+  .final::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 78% 88%, rgba(255,194,32,.22) 0%, transparent 45%);
+    pointer-events:none;
+  }
+  .final-inner{position:relative; z-index:2; max-width:660px; margin:0 auto}
+  .final h2{color:#fff; font-size:clamp(28px,5vw,44px); letter-spacing:-1.6px; margin-bottom:16px}
+  .final p{
+    margin:0 auto 22px; max-width:560px;
+    color:rgba(255,255,255,.88); font-size:17px; line-height:1.6;
+  }
+  .final p .f-em{
+    background:linear-gradient(180deg,transparent 60%, rgba(255,194,32,.55) 60%);
+    font-weight:850; color:#fff; padding:0 1px;
+  }
+  .final-unlock{
+    display:inline-flex; align-items:center; gap:9px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.3);
+    padding:10px 18px; border-radius:999px;
+    font-size:14px; font-weight:750; color:#fff;
+    margin:0 auto 30px;
+    backdrop-filter:blur(8px);
+  }
+  .final .btn-main{font-size:18.5px; padding:20px 42px}
+  .final .cta-wrap{align-items:center}
+  .final .cta-note{justify-content:center; color:rgba(255,255,255,.72)}
+
+  .trust{
+    display:flex; gap:22px; justify-content:center; flex-wrap:wrap;
+    margin-top:36px; padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.16);
+    font-size:13px; font-weight:700; color:rgba(255,255,255,.72);
+  }
+  .trust span{display:inline-flex; align-items:center; gap:7px}
+
+  /* ============ FOOTER ============ */
+  footer{
+    background:#061a2e; color:#8ba3bd;
+    padding:52px 20px 40px; font-size:13.2px; line-height:1.7;
+  }
+  .foot-inner{max-width:1140px; margin:0 auto}
+  .foot-top{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:18px; flex-wrap:wrap; margin-bottom:26px;
+    padding-bottom:24px; border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  .foot-brand{display:flex; align-items:center;}
+  .foot-links{display:flex; gap:20px; flex-wrap:wrap}
+  .foot-links a{color:#8ba3bd; text-decoration:none; font-weight:650; transition:color .15s}
+  .foot-links a:hover{color:#fff}
+  .legal{font-size:12.2px; line-height:1.72; color:#6d8399; max-width:900px}
+  .legal strong{color:#9db3c9}
+  .copy{margin-top:22px; font-size:12.2px; color:#5b7189}
+
+  /* ============ STICKY MOBILE/BOTTOM CTA ============ */
+  .sticky-cta{
+    position:fixed; left:0; right:0; bottom:0; z-index:70;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(14px);
+    border-top:1px solid var(--line);
+    padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    box-shadow:0 -12px 30px -20px rgba(0,20,50,.5);
+    transform:translateY(120%);
+    transition:transform .3s cubic-bezier(.2,.8,.25,1);
+  }
+  .sticky-cta.show{transform:translateY(0)}
+  .sticky-cta .sc-txt{font-size:13.5px; font-weight:750; line-height:1.3}
+  .sticky-cta .sc-txt small{display:block; font-size:11.5px; font-weight:650; color:var(--muted)}
+  .sticky-cta a{
+    flex:none;
+    background:linear-gradient(180deg,#ffdb70,#ffc220);
+    color:var(--ink); text-decoration:none;
+    font-weight:850; font-size:14.5px;
+    padding:13px 22px; border-radius:12px;
+    box-shadow:0 10px 20px -12px rgba(255,194,32,1);
+  }
+
+  /* ============ REVEAL ANIMATION ============ */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.8,.25,1)}
+  .reveal.in{opacity:1; transform:none}
+
+  @media (max-width:640px){
+    section{padding:56px 0}
+    .hero{padding:44px 18px 72px}
+    .cd-cell{min-width:74px; padding:13px 8px 11px}
+    .stats{gap:4px}
+    .gc-float.a{right:-6px}
+    .gc-float.b{left:-6px}
+    .sticky-cta .sc-txt{display:none}
+    .sticky-cta a{width:100%; text-align:center}
+    .step.highlight::before{position:static; display:inline-block; margin-bottom:10px}
+    .logo-svg{height:32px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  🎉 Our <b>Annual Visitor Giveaway</b> is live — <b>100 winners</b> this year. Participate to unlock the listings search.
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <!-- Rent2ownHelper Logo SVG (Header) -->
+      <svg class="logo-svg" viewBox="0 0 680 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Icon: Overlapping Houses -->
+        <g>
+          <!-- Blue House (Background Outline) -->
+          <path d="M 15 85 V 45 L 45 15 L 75 45 V 85" fill="none" stroke="#0056a4" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- Green House (Foreground Solid) -->
+          <path d="M 35 90 V 55 L 65 25 L 95 55 V 90 Z" fill="#00b050" stroke="#00b050" stroke-width="4" stroke-linejoin="round"/>
+          <!-- White Door Cutout -->
+          <rect x="60" y="70" width="14" height="20" fill="#ffffff" rx="1"/>
+          <!-- White Ground Line -->
+          <rect x="15" y="85" width="80" height="4" fill="#ffffff"/>
+        </g>
+        <!-- Text: Rent2ownHelper -->
+        <text x="115" y="72" font-size="54" font-weight="900" letter-spacing="-1.5" font-family="'Arial Black', 'Impact', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+          <tspan fill="#0056a4">Rent</tspan>
+          <tspan fill="#00b050">2</tspan>
+          <tspan fill="#0056a4">own</tspan>
+          <tspan fill="#00b050">Helper</tspan>
+        </text>
+      </svg>
+    </a>
+    <a class="nav-cta" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">Participate Now</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+
+    <div>
+      <div class="pill"><span class="pulse"></span> Annual Giveaway · 2026</div>
+
+      <h1>Get <span class="hl">$1,000</span> to spend at Walmart</h1>
+
+      <p class="hero-sub">
+        Every year we give back to the people who use our site. This year,
+        <strong>100 visitors will each win a $1,000 Walmart gift card</strong> — that's
+        <strong>$100,000 in total prizes</strong>. Participation is free and takes about 30 seconds.
+      </p>
+
+      <!-- ★ KEY MESSAGE -->
+      <div class="unlock-callout">
+        <div class="uico">🔎</div>
+        <p>
+          <b>After you participate, you'll be able to search rental listings</b> —
+          browse every property, filter by city, price, and bedrooms, and see full details.
+          <span class="u-em">Searching the listings requires participation in this year's giveaway.</span>
+        </p>
+      </div>
+
+      <div class="cta-wrap">
+        <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">
+          Participate Now <span class="arrow">→</span>
+        </a>
+        <div class="cta-note">
+          <span>✓ Free to enter</span>
+          <span>✓ 100 winners</span>
+          <span>✓ Unlocks listings search</span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <b data-count="100">0</b>
+          <span>Winners</span>
+        </div>
+        <div class="stat">
+          <b data-count="1000" data-prefix="$">$0</b>
+          <span>Per winner</span>
+        </div>
+        <div class="stat">
+          <b data-count="100000" data-prefix="$">$0</b>
+          <span>Total prizes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gift card visual -->
+    <div class="gc-stage">
+      <div class="gc-float a">
+        <span class="ico">🏆</span>
+        <span>100 Winners<small>This year</small></span>
+      </div>
+
+      <div class="gc">
+        <div class="gc-top">
+          <svg class="gc-spark" viewBox="0 0 100 100" aria-hidden="true">
+            <g fill="#ffc220">
+              <rect x="44" y="2" width="12" height="30" rx="6"/>
+              <rect x="44" y="2" width="12" height="30" rx="6" transform="rotate(60 50 50)"/>
+              <rect x="44" y="2" width="12" height="30" rx="6" transform="rotate(120 50 50)"/>
+            </g>
+          </svg>
+          <div>
+            <div class="gc-label">Gift Card</div>
+            <div class="gc-brand">Walmart</div>
+          </div>
+        </div>
+
+        <div class="gc-amount">$1,000</div>
+
+        <div class="gc-foot">
+          <span>Annual Giveaway</span>
+          <span>2026</span>
+        </div>
+      </div>
+
+      <div class="gc-float b">
+        <span class="ico">🔎</span>
+        <span>Listings Search<small>Unlocked after entry</small></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="countdown-sec">
+  <div class="wrap">
+    <div class="cd-box reveal">
+      <div class="cd-title">⏳ Entry closes in</div>
+      <div class="cd-grid" id="countdown">
+        <div class="cd-cell"><b id="cd-d">00</b><span>Days</span></div>
+        <div class="cd-cell"><b id="cd-h">00</b><span>Hours</span></div>
+        <div class="cd-cell"><b id="cd-m">00</b><span>Minutes</span></div>
+        <div class="cd-cell"><b id="cd-s">00</b><span>Seconds</span></div>
+      </div>
+      <p style="margin:0;color:var(--muted);font-size:14.5px;max-width:560px">
+        Winners are drawn at random after the entry window closes and notified by email.
+        Participation also unlocks the rental listings search.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEARCH UNLOCK (KEY SECTION) ============ -->
+<section class="unlock-sec">
+  <div class="wrap">
+    <div class="unlock-grid">
+
+      <div class="unlock-copy reveal">
+        <div class="sec-eyebrow">The Unlock</div>
+        <h2>After you participate, you can search rental listings</h2>
+        <p>
+          This is the part people ask about most. Participating in the annual giveaway is what
+          unlocks the listings search on our site — for every visitor.
+        </p>
+
+        <ul class="unlock-list">
+          <li>
+            <span class="tick"><svg viewBox="0 0 32 32"><path d="M6 17l7 7 13-15"/></svg></span>
+            <span><b>Search every listing</b> by city, neighborhood, address, or property name.</span>
+          </li>
+          <li>
+            <span class="tick"><svg viewBox="0 0 32 32"><path d="M6 17l7 7 13-15"/></svg></span>
+            <span><b>Filter instantly</b> by price, bedrooms, bathrooms, and square footage.</span>
+          </li>
+          <li>
+            <span class="tick"><svg viewBox="0 0 32 32"><path d="M6 17l7 7 13-15"/></svg></span>
+            <span><b>See full property details</b> — photos, amenities, availability, and contact info.</span>
+          </li>
+          <li>
+            <span class="tick"><svg viewBox="0 0 32 32"><path d="M6 17l7 7 13-15"/></svg></span>
+            <span><b>Search as much as you want</b> — no limits once you've taken part.</span>
+          </li>
+        </ul>
+
+        <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener" style="font-size:16.5px;padding:16px 30px">
+          Participate &amp; Unlock Search <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Search preview mock -->
+      <div class="preview reveal">
+        <div class="preview-badge"><span class="dotg"></span> Listings search unlocked</div>
+
+        <div class="mock-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0b1220" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/>
+          </svg>
+          <span class="typed" id="typedText">Apartments in Austin, TX</span>
+          <span class="caret"></span>
+          <span class="go">Search</span>
+        </div>
+
+        <div class="filters">
+          <span class="on">$1,000–$2,500</span>
+          <span class="on">2+ beds</span>
+          <span>Pet friendly</span>
+          <span>Parking</span>
+        </div>
+
+        <div class="mock-list">
+          <div class="mock-item">
+            <div class="mock-thumb"></div>
+            <div class="mock-meta">
+              <strong>Sunlit 2BR Loft</strong>
+              <small>412 Marigold Ave, Austin, TX · 2 bd · 2 ba · 1,120 sqft</small>
+            </div>
+            <div class="mock-price">$1,850<small>/mo</small></div>
+          </div>
+
+          <div class="mock-item">
+            <div class="mock-thumb b"></div>
+            <div class="mock-meta">
+              <strong>Modern 2BR + Den</strong>
+              <small>6404 Willow Park Ln, Austin, TX · 2 bd · 2 ba · 1,340 sqft</small>
+            </div>
+            <div class="mock-price">$1,990<small>/mo</small></div>
+          </div>
+
+          <div class="mock-item">
+            <div class="mock-thumb c"></div>
+            <div class="mock-meta">
+              <strong>Garden 2BR Townhome</strong>
+              <small>228 Quarry Rd, Austin, TX · 2 bd · 2.5 ba · 1,410 sqft</small>
+            </div>
+            <div class="mock-price">$2,140<small>/mo</small></div>
+          </div>
+        </div>
+
+        <div class="mock-locked">
+          <div class="blur-row"><div></div><div></div><div></div></div>
+          <div class="lock-msg">🔒 + 12 more listings — participate to unlock</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY / PRIZE ============ -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">The Prize</div>
+      <h2>100 winners. $1,000 each.</h2>
+      <p>No points, no hoops, no purchase. Just our way of saying thank you to everyone who visits us each year.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal">
+        <div class="cico">💳</div>
+        <h3>$1,000 Walmart Gift Card</h3>
+        <p>Spend it on groceries, home essentials, electronics, or anything else Walmart sells — in store or online. No restrictions, no expiry on the card balance.</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="cico">👥</div>
+        <h3>100 Winners This Year</h3>
+        <p>This is our biggest giveaway yet. One hundred separate winners are drawn, so your odds are genuinely better than most sweepstakes you'll see.</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="cico">🔎</div>
+        <h3>Unlocks the Listings Search</h3>
+        <p>After you participate, the full rental listings search opens up — every property, every filter, every detail. That's the access participation gives you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">How To Participate</div>
+      <h2>Three steps. About 30 seconds.</h2>
+      <p>Every visitor to our rental listings site needs to participate — it's how we keep the giveaway fair, and it's what unlocks the search.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Click "Participate Now"</h3>
+        <p>You'll be redirected to our official entry page. It's the only place entries are accepted — no forms on this page.</p>
+      </div>
+
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Complete the quick entry</h3>
+        <p>Confirm your name and email on the entry page. That's your ticket into the draw for one of the <strong>100 × $1,000</strong> prizes.</p>
+      </div>
+
+      <div class="step highlight reveal">
+        <div class="step-num"></div>
+        <h3>Search rental listings</h3>
+        <p>
+          As soon as you've participated, <strong>you'll be able to search rental listings</strong> —
+          browse by city, filter by price and bedrooms, and open full property details.
+        </p>
+        <span class="step-tag">🔓 Listings search unlocked after participation</span>
+      </div>
+    </div>
+
+    <div class="notice reveal">
+      <div class="nico">ℹ️</div>
+      <p>
+        <strong>Participation is required to search listings.</strong>
+        Every visitor must take part in this year's giveaway before the rental listings search becomes available.
+        It takes about 30 seconds, costs nothing, and automatically enters you to win.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Questions</div>
+      <h2>Good to know</h2>
+      <p>Everything you need to know before you participate.</p>
+    </div>
+
+    <div class="faq-list">
+      <details open>
+        <summary>What do I get after I participate?</summary>
+        <div class="ans">
+          Two things. First, you're entered into the draw for one of <strong>100 × $1,000 Walmart gift cards</strong>.
+          Second, <strong>you'll be able to search rental listings</strong> — the full listings search unlocks
+          immediately after participation, including filters for city, price, bedrooms, bathrooms, and square footage.
+        </div>
+      </details>
+
+      <details>
+        <summary>Is it really free to participate?</summary>
+        <div class="ans">
+          Yes — 100% free. <strong>No purchase necessary.</strong> You never have to buy anything, and buying
+          something won't improve your chances of winning. The giveaway is open to legal residents of the
+          50 U.S. states and D.C. who are 18 or older.
+        </div>
+      </details>
+
+      <details>
+        <summary>How many people win, and how much?</summary>
+        <div class="ans">
+          <strong>100 winners</strong> are selected, and each one receives a <strong>$1,000 Walmart gift card</strong>.
+          That's a total prize pool of <strong>$100,000</strong>. Winners are chosen at random from all valid entries
+          received during the entry window.
+        </div>
+      </details>
+
+      <details>
+        <summary>Do I have to participate to search the listings?</summary>
+        <div class="ans">
+          Yes. Participation in this year's annual giveaway is required for every visitor before the rental
+          listings search unlocks. Once you've taken part, you'll have full search access to every available
+          property — no further steps needed.
+        </div>
+      </details>
+
+      <details>
+        <summary>When does entry close?</summary>
+        <div class="ans">
+          Entry closes at 11:59 p.m. ET on <strong>December 31, 2026</strong>. The countdown at the top of this
+          page shows exactly how much time is left. Entries received after that time won't be counted.
+        </div>
+      </details>
+
+      <details>
+        <summary>How will I know if I've won?</summary>
+        <div class="ans">
+          Winners are drawn at random after the entry window closes. We'll contact each winner by email at the
+          address provided on the entry page, so make sure you enter an address you check regularly. If a winner
+          can't be reached within the response window, an alternate winner may be drawn.
+        </div>
+      </details>
+
+      <details>
+        <summary>How many times can I enter?</summary>
+        <div class="ans">
+          One entry per person and per email address. Duplicate entries are removed before the draw, so there's
+          no advantage to entering more than once — just make sure your single entry is submitted before the
+          deadline.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="final-inner">
+    <h2>Participate &amp; start searching</h2>
+    <p>
+      Join this year's annual giveaway and you could be one of <strong>100 winners</strong>
+      taking home a $1,000 Walmart gift card. And as soon as you've participated,
+      <span class="f-em">you'll be able to search rental listings</span>.
+    </p>
+
+    <div class="final-unlock">🔎 Listings search unlocks right after you participate</div>
+
+    <div class="cta-wrap">
+      <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">
+        Participate Now <span class="arrow">→</span>
+      </a>
+      <div class="cta-note">
+        <span>✓ 100 winners</span>
+        <span>✓ $1,000 each</span>
+        <span>✓ Free entry</span>
+        <span>✓ Search unlocked</span>
+      </div>
+    </div>
+
+    <div class="trust">
+      <span>🔒 Secure entry page</span>
+      <span>⚡ 30-second participation</span>
+      <span>📧 Winners notified by email</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <!-- Rent2ownHelper Logo SVG (Footer) -->
+        <svg class="logo-svg" viewBox="0 0 680 100" xmlns="http://www.w3.org/2000/svg" style="height:36px">
+          <g>
+            <path d="M 15 85 V 45 L 45 15 L 75 45 V 85" fill="none" stroke="#0056a4" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M 35 90 V 55 L 65 25 L 95 55 V 90 Z" fill="#00b050" stroke="#00b050" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="60" y="70" width="14" height="20" fill="#ffffff" rx="1"/>
+            <rect x="15" y="85" width="80" height="4" fill="#ffffff"/>
+          </g>
+          <text x="115" y="72" font-size="54" font-weight="900" letter-spacing="-1.5" font-family="'Arial Black', 'Impact', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+            <tspan fill="#0056a4">Rent</tspan>
+            <tspan fill="#00b050">2</tspan>
+            <tspan fill="#0056a4">own</tspan>
+            <tspan fill="#00b050">Helper</tspan>
+          </text>
+        </svg>
+      </div>
+      <nav class="foot-links">
+        <a href="#top">Home</a>
+        <a href="#rules">Official Rules</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <p class="legal">
+      <strong>NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE WILL NOT IMPROVE YOUR CHANCES OF WINNING.</strong>
+      Open to legal residents of the 50 United States and the District of Columbia who are 18 years of age or
+      older at the time of entry. Void where prohibited or restricted by law. Entry period ends at 11:59 p.m. ET
+      on December 31, 2026. One hundred (100) prizes will be awarded, each consisting of a $1,000 Walmart gift
+      card (approximate retail value: $1,000 each; total ARV of all prizes: $100,000). Odds of winning depend on
+      the total number of eligible entries received. Winners will be selected in a random drawing from among all
+      eligible entries and notified by email. Gift cards are subject to the issuer's terms and conditions.
+      Walmart is not a sponsor of, and is not affiliated with, this promotion. All trademarks are the property
+      of their respective owners.
+    </p>
+
+    <p class="copy">© 2026 Rent2ownHelper, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY BOTTOM CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sc-txt">
+    100 winners · $1,000 each
+    <small>Participate to unlock the listings search</small>
+  </div>
+  <a href="https://YOUR-ENTRY-PAGE.com" rel="noopener">Participate Now →</a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Countdown ---------- */
+  function getDeadline() {
+    var now = new Date();
+    var year = now.getFullYear();
+    var d = new Date(year, 11, 31, 23, 59, 59);
+    if (d - now < 0) d = new Date(year + 1, 11, 31, 23, 59, 59);
+    return d;
+  }
+
+  var deadline = getDeadline();
+  var elD = document.getElementById("cd-d");
+  var elH = document.getElementById("cd-h");
+  var elM = document.getElementById("cd-m");
+  var elS = document.getElementById("cd-s");
+
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+
+  function tick() {
+    var diff = deadline - new Date();
+    if (diff < 0) diff = 0;
+    var sec = Math.floor(diff / 1000);
+    elD.textContent = pad(Math.floor(sec / 86400));
+    elH.textContent = pad(Math.floor((sec % 86400) / 3600));
+    elM.textContent = pad(Math.floor((sec % 3600) / 60));
+    elS.textContent = pad(sec % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ---------- Number count-up ---------- */
+  function countUp(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    var prefix = el.getAttribute("data-prefix") || "";
+    var duration = 1300;
+    var start = null;
+
+    if (reduceMotion) { el.textContent = prefix + target.toLocaleString(); return; }
+
+    function frame(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + Math.round(target * eased).toLocaleString();
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------- Animated typewriter for search preview ---------- */
+  var typedEl = document.getElementById("typedText");
+  var phrases = [
+    "Apartments in Austin, TX",
+    "2 bedroom under $2,000",
+    "Pet friendly near downtown",
+    "Houses with parking"
+  ];
+  var pIndex = 0, cIndex = 0, deleting = false;
+
+  function typeLoop() {
+    var current = phrases[pIndex];
+
+    if (!deleting) {
+      cIndex++;
+      typedEl.textContent = current.slice(0, cIndex);
+      if (cIndex === current.length) {
+        deleting = true;
+        setTimeout(typeLoop, 1700);
+        return;
+      }
+      setTimeout(typeLoop, 55);
+    } else {
+      cIndex--;
+      typedEl.textContent = current.slice(0, cIndex);
+      if (cIndex === 0) {
+        deleting = false;
+        pIndex = (pIndex + 1) % phrases.length;
+        setTimeout(typeLoop, 320);
+        return;
+      }
+      setTimeout(typeLoop, 26);
+    }
+  }
+
+  if (!reduceMotion && typedEl) {
+    setTimeout(typeLoop, 900);
+  }
+
+  /* ---------- Scroll reveal + trigger stat count ---------- */
+  var revealEls = document.querySelectorAll(".reveal");
+  var counted = false;
+
+  function triggerStats() {
+    if (counted) return;
+    counted = true;
+    document.querySelectorAll(".stats [data-count]").forEach(countUp);
+  }
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -40px 0px" });
+
+    revealEls.forEach(function (el) { io.observe(el); });
+
+    var heroStats = document.querySelector(".stats");
+    if (heroStats) {
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { triggerStats(); io2.disconnect(); }
+        });
+      }, { threshold: 0.3 });
+      io2.observe(heroStats);
+    }
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in"); });
+    document.querySelectorAll("[data-count]").forEach(countUp);
+  }
+
+  /* ---------- Sticky bottom CTA ---------- */
+  var stickyCta = document.getElementById("stickyCta");
+  var hero = document.querySelector(".hero");
+  var finalSec = document.querySelector(".final");
+
+  function updateSticky() {
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    var heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 600;
+    var pastHero = scrollY > heroBottom - 120;
+
+    var nearFinal = false;
+    if (finalSec) {
+      nearFinal = finalSec.getBoundingClientRect().top < window.innerHeight * 0.85;
+    }
+
+    stickyCta.classList.toggle("show", pastHero && !nearFinal);
+  }
+
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        updateSticky();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener("resize", updateSticky);
+  updateSticky();
+})();
+</script>
+</body>
+</html>
