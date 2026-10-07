@@ -8,9 +8,7 @@
 <meta name="theme-color" content="#0071ce">
 
 <!-- =========================================================
-     IMPORTANT: Replace every href="https://YOUR-ENTRY-PAGE.com"
-     with the URL of the page you want the button to redirect to.
-     (Search for "YOUR-ENTRY-PAGE" — there are 6 places.)
+     ALL BUTTONS LINK TO: https://www.af9m8trk.com/4BR11ERX/T6M12294/
      ========================================================= -->
 
 <style>
@@ -122,6 +120,61 @@
     .hero-inner{grid-template-columns:1.05fr .95fr; gap:40px}
   }
 
+  /* ===== TOP UNLOCK BANNER ===== */
+  .top-unlock-banner {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 3;
+    animation: slideDown 0.6s cubic-bezier(0.2, 0.8, 0.25, 1);
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .top-unlock-banner .u-icon {
+    width: 44px;
+    height: 44px;
+    flex: none;
+    border-radius: 12px;
+    background: linear-gradient(140deg, #e8f3ff, #cce4ff);
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: var(--blue-dk);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+  }
+  .top-unlock-banner .u-content {
+    flex: 1;
+  }
+  .top-unlock-banner .u-content strong {
+    display: block;
+    font-size: 15.5px;
+    font-weight: 850;
+    color: var(--blue-deep);
+    line-height: 1.3;
+    margin-bottom: 5px;
+    letter-spacing: -0.3px;
+  }
+  .top-unlock-banner .u-content p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #4a5f77;
+  }
+  .top-unlock-banner .u-content p .highlight {
+    background: linear-gradient(180deg, transparent 60%, rgba(255, 194, 32, 0.4) 60%);
+    font-weight: 750;
+    color: var(--ink);
+    padding: 0 2px;
+  }
+
   .pill{
     display:inline-flex; align-items:center; gap:8px;
     background:rgba(255,255,255,.14);
@@ -158,33 +211,6 @@
     max-width:560px;
   }
   .hero-sub strong{color:#fff; font-weight:800}
-
-  /* ===== HERO UNLOCK CALLOUT ===== */
-  .unlock-callout{
-    display:flex; align-items:flex-start; gap:13px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.32);
-    border-left:4px solid var(--yellow);
-    border-radius:14px;
-    padding:15px 18px;
-    margin:0 0 26px;
-    max-width:560px;
-    backdrop-filter:blur(8px);
-  }
-  .unlock-callout .uico{
-    width:38px;height:38px;flex:none;border-radius:11px;
-    background:linear-gradient(140deg,#ffdb70,#ffc220);
-    display:grid;place-items:center;font-size:18px;
-    box-shadow:0 8px 18px -10px rgba(255,194,32,.95);
-  }
-  .unlock-callout p{
-    margin:0; font-size:15px; line-height:1.55; color:rgba(255,255,255,.92);
-  }
-  .unlock-callout p b{color:#fff; font-weight:850}
-  .unlock-callout p .u-em{
-    background:linear-gradient(180deg,transparent 60%, rgba(255,194,32,.55) 60%);
-    font-weight:850; color:#fff; padding:0 1px;
-  }
 
   /* CTA */
   .cta-wrap{display:flex; flex-direction:column; gap:11px; align-items:flex-start}
@@ -705,6 +731,10 @@
     .sticky-cta a{width:100%; text-align:center}
     .step.highlight::before{position:static; display:inline-block; margin-bottom:10px}
     .logo-svg{height:32px}
+    .top-unlock-banner { padding: 15px; gap: 12px; }
+    .top-unlock-banner .u-icon { width: 38px; height: 38px; font-size: 17px; }
+    .top-unlock-banner .u-content strong { font-size: 14.5px; }
+    .top-unlock-banner .u-content p { font-size: 12.8px; }
   }
   @media (prefers-reduced-motion:reduce){
     *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important}
@@ -745,7 +775,7 @@
         </text>
       </svg>
     </a>
-    <a class="nav-cta" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">Participate Now</a>
+    <a class="nav-cta" href="https://www.af9m8trk.com/4BR11ERX/T6M12294/" target="_blank" rel="noopener noreferrer">Participate Now</a>
   </div>
 </header>
 
@@ -754,6 +784,15 @@
   <div class="hero-inner">
 
     <div>
+      <!-- ★ TOP UNLOCK BANNER (Clean & Readable) -->
+      <div class="top-unlock-banner">
+        <div class="u-icon">🔎</div>
+        <div class="u-content">
+          <strong>After you participate, you'll be able to search rental listings</strong>
+          <p>Browse every property, filter by city, price, and bedrooms, and see full details. <span class="highlight">Searching the listings requires participation in this year's giveaway.</span></p>
+        </div>
+      </div>
+
       <div class="pill"><span class="pulse"></span> Annual Giveaway · 2026</div>
 
       <h1>Get <span class="hl">$1,000</span> to spend at Walmart</h1>
@@ -764,18 +803,8 @@
         <strong>$100,000 in total prizes</strong>. Participation is free and takes about 30 seconds.
       </p>
 
-      <!-- ★ KEY MESSAGE -->
-      <div class="unlock-callout">
-        <div class="uico">🔎</div>
-        <p>
-          <b>After you participate, you'll be able to search rental listings</b> —
-          browse every property, filter by city, price, and bedrooms, and see full details.
-          <span class="u-em">Searching the listings requires participation in this year's giveaway.</span>
-        </p>
-      </div>
-
       <div class="cta-wrap">
-        <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">
+        <a class="btn-main" href="https://www.af9m8trk.com/4BR11ERX/T6M12294/" target="_blank" rel="noopener noreferrer">
           Participate Now <span class="arrow">→</span>
         </a>
         <div class="cta-note">
@@ -891,7 +920,7 @@
           </li>
         </ul>
 
-        <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener" style="font-size:16.5px;padding:16px 30px">
+        <a class="btn-main" href="https://www.af9m8trk.com/4BR11ERX/T6M12294/" target="_blank" rel="noopener noreferrer" style="font-size:16.5px;padding:16px 30px">
           Participate &amp; Unlock Search <span class="arrow">→</span>
         </a>
       </div>
@@ -1118,7 +1147,7 @@
     <div class="final-unlock">🔎 Listings search unlocks right after you participate</div>
 
     <div class="cta-wrap">
-      <a class="btn-main" href="https://YOUR-ENTRY-PAGE.com" rel="noopener">
+      <a class="btn-main" href="https://www.af9m8trk.com/4BR11ERX/T6M12294/" target="_blank" rel="noopener noreferrer">
         Participate Now <span class="arrow">→</span>
       </a>
       <div class="cta-note">
@@ -1188,7 +1217,7 @@
     100 winners · $1,000 each
     <small>Participate to unlock the listings search</small>
   </div>
-  <a href="https://YOUR-ENTRY-PAGE.com" rel="noopener">Participate Now →</a>
+  <a href="https://www.af9m8trk.com/4BR11ERX/T6M12294/" target="_blank" rel="noopener noreferrer">Participate Now →</a>
 </div>
 
 <script>
